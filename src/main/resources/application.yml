@@ -1,0 +1,28 @@
+server:
+  port: 8080
+
+spring:
+  application:
+    name: ollama-chat-portfolio
+
+# Configurações da integração com o Ollama (IA local)
+ollama:
+  base-url: http://localhost:11434
+  model: llama3.2
+  timeout-seconds: 60
+  system-prompt: "Você é um assistente virtual útil, direto e educado."
+  chat:
+    max-history-size: 20   # nº máximo de mensagens guardadas por sessão
+
+management:
+  endpoints:
+    web:
+      exposure:
+        include: health,info
+  endpoint:
+    health:
+      show-details: when-authorized
+
+logging:
+  level:
+    com.portfolio.ollamachat: INFO
