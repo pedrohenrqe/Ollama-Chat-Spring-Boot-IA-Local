@@ -132,10 +132,3 @@ ollama:
   chat:
     max-history-size: 20
 ```
-
-## 🚀 Possíveis evoluções
-
-- Persistir o histórico em banco de dados (Postgres/Redis) em vez de memória.
-- Autenticação por usuário (Spring Security + JWT), vinculando sessões a contas.
-- RAG (Retrieval-Augmented Generation) indexando documentos próprios.
-- Métricas de uso por modelo/sessão via Micrometer + Prometheus.
