@@ -139,8 +139,3 @@ ollama:
 - Autenticação por usuário (Spring Security + JWT), vinculando sessões a contas.
 - RAG (Retrieval-Augmented Generation) indexando documentos próprios.
 - Métricas de uso por modelo/sessão via Micrometer + Prometheus.
-
-## 📄 Licença
-
-Projeto livre para fins de estudo e portfólio.
-# Ollama-Chat-Spring-Boot-IA-Local
